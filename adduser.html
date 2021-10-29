@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add User Form</title>
+</head>
+<body>
+   <fieldset>
+    <h1 >Add an user here by adding all Relevent Informations</h1>
+    <hr>
+    <form action="insert1.php" method="POST">
+                <table ALIGN="center">
+                <tbody>
+                <tr>
+                <td><label for="username">User Name:</label></td>
+                <td><input type="text" name="username"  placeholder="Choose user name" minlength="3" required></td>
+                </tr>
+                <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" name="password" placeholder="Choose a valid Password" minlength="4" maxlength="32" required></td>
+                </tr>
+                <tr>
+                <td><label for="name">Full Name:</label></td>
+                <td><input type="text" name="name"  placeholder="Enter full name" minlength="5" required></td>
+                </tr>
+                <tr>
+                <td><label for="number">Mobile Number:</label></td>
+                <td><input type="number" name="number"  placeholder="Enter mobile number" minlength="11" required></td>
+                </tr>
+                <tr>
+                <td><label for="email">E-mail ID:</label></td>
+                <td><input type="email" name="email"  placeholder="Enter E-mail ID" required></td>
+                </tr>
+                <tr> 
+                <td><label for="user_type">You would like to:</label></td>
+                <td>
+                    <select name="user_type">
+			        <option name="retailer"  selected value="retailer">Add him as a retailer?</option>
+			        <option name="customer" value="customer">Add him as a customer?</option>
+		            </select>
+                </td>
+                </tr>
+                <tr>
+                <td></td>
+                <td>
+                <button type="submit" value="submit">ADD USER</button>
+                <button type="reset">RESET</button></td>
+                </tr>
+                </tbody>
+                </table>
+                </form>
+    </fieldset>
+    
+</body>
+</html>

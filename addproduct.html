@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Product</title>
+</head>
+<body>
+   <fieldset>
+    <h1 >Add a product</h1>
+    <hr>
+    <form action="pinsert.php" method="POST">
+                <table ALIGN="center">
+                <tr>
+                <td><label for="id">ID of user who's product you want to add:</label></td>
+                <td><input type="number" name="id"  placeholder="User ID" required></td>
+                </tr>
+                <tr>
+                <td><label for="pname">Full Name of the Product:</label></td>
+                <td><input type="text" name="pname"  placeholder="Enter your full name" minlength="2" required></td>
+                </tr>
+                <tr>
+                <td><label for="info">Product Information:</label></td>
+                <td><input type="text" name="info"  placeholder="Information about the product." minlength="5" required></td>
+                </tr>
+                <tr>
+                <td><label for="price">Price of the product you want to add:</label></td>
+                <td><input type="number" name="price"  placeholder="Price of the product" required></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td>
+                <button type="submit" value="submit">Add Product</button>
+                <button type="reset">Reset All Information</button></td>
+                </tr>    
+                </tbody>
+                </table>
+                </form>
+    </fieldset>
+    
+</body>
+</html>
