@@ -4,35 +4,36 @@
     <title>Sign Up Form</title>
 </head>
 <body>
-   <fieldset>
-    <h1 >Become a Member</h1>
+    <fieldset>
+    <legend ALIGN="center"><h1>Join Shob-Kichu</h1></legend>
+    <center><h3>Become a member by filling up this registration form</h3></center>
     <hr>
     <form action="insert.php" method="POST">
                 <table ALIGN="center">
                 <tbody>
                 <tr>
-                <td><label for="username">User Name:</label></td>
-                <td><input type="text" name="username"  placeholder="Choose your user name" minlength="3" required></td>
+                <td align="center"><label for="username">User Name:</label></td>
+                <td align="center"><input type="text" name="username"  placeholder="Choose your user name" minlength="3" required></td>
                 </tr>
                 <tr>
-                <td><label for="password">Password:</label></td>
-                <td><input type="password" name="password" placeholder="Choose a valid Password" minlength="4" maxlength="32" required></td>
+                <td align="center"><label for="password">Password:</label></td>
+                <td align="center"><input type="password" name="password" placeholder="Choose a valid Password" minlength="4" maxlength="32" required></td>
                 </tr>
                 <tr>
-                <td><label for="name">Full Name:</label></td>
-                <td><input type="text" name="name"  placeholder="Enter your full name" minlength="5" required></td>
+                <td align="center"><label for="name">Full Name:</label></td>
+                <td align="center"><input type="text" name="name"  placeholder="Enter your full name" minlength="5" required></td>
                 </tr>
                 <tr>
-                <td><label for="number">Mobile Number:</label></td>
-                <td><input type="number" name="number"  placeholder="Enter your mobile number" minlength="11" required></td>
+                <td align="center"><label for="number">Mobile Number:</label></td>
+                <td align="center"><input type="number" name="number"  placeholder="Enter your mobile number" minlength="11" required></td>
                 </tr>
                 <tr>
-                <td><label for="email">E-mail ID:</label></td>
-                <td><input type="email" name="email"  placeholder="Enter your E-mail ID" required></td>
+                <td align="center"><label for="email">E-mail ID:</label></td>
+                <td align="center"><input type="email" name="email"  placeholder="Enter your E-mail ID" required></td>
                 </tr>
                 <tr> 
-                <td><label for="user_type">You would like to:</label></td>
-                <td>
+                <td align="center"><label for="user_type">You would like to:</label></td>
+                <td align="center">
                     <select name="user_type">
 			        <option name="retailer"  selected value="retailer">Sell something?</option>
 			        <option name="customer" value="customer">Buy Something?</option>
@@ -40,13 +41,28 @@
                 </td>
                 </tr>
                 <tr>
-                <td></td>
-                <td>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                <td colspan="2" align="center">
                 <button type="submit" value="submit">REGISTER</button>
                 <button type="reset">RESET</button></td>
-                </tr>    
+                </tr>  
                 <tr>
-                <td>Already a user? <button><a href="index.php">Log in</a></button> instead.</td>
+                    <td>
+                        <br>
+                        <br>
+                    </td>
+                </tr>  
+                <tr>
+                <td colspan="2" align="center">Already a user? <button><a href="index.php">Log in</a></button> instead.</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">Facing any problem ? Contact us by clicking here-
+                    <button><a href="contact.html">Contact Us</a></button>
+                    </td>
                 </tr>
                 </tbody>
                 </table>

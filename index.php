@@ -39,7 +39,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Shobkichu</title>
 </head>
 <body>
     <fieldset>
@@ -51,16 +51,16 @@
         <table ALIGN="center">
                 <thead>
                     <tr>
-                        <td><label for="username">User name</label></td>
-                        <td><input type="text" name="username" placeholder="Enter your username" required></td>
+                        <td align=center><label for="username">User name</label></td>
+                        <td align=center><input type="text" name="username" placeholder="Enter your username" required></td>
                     </tr>   
                     <tr> 
-                        <td><label for="password">Password</label></td>
-                        <td><input type="password" name="password" placeholder="Enter your password" required></td>
+                        <td align=center><label for="password">Password</label></td>
+                        <td align=center><input type="password" name="password" placeholder="Enter your password" required></td>
                     </tr>
                     <tr> 
-                        <td><label for="user_Type">Select User-Type:</label></td>
-                        <td>
+                        <td align=center><label for="user_Type">Select User-Type:</label></td>
+                        <td align=center>
                         <select name="user_Type">
 			                <option name="admin"  selected value="admin">Admin</option>
 			                <option name="retailer" value="retailer">Retailer</option>
@@ -71,19 +71,40 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td>
+                        <td colspan="2">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align=center>
                             <button type="submit" name="login">Login</button>
                             <button type="reset">Reset</button>
                         </td>
                     </tr>
                     <tr>
-                        <td>Not a user yet? <button><a href="joinus.html">Join Us</a></button></td>
+                        <td colspan="2">
+                            <br>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <br>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align=center>Not a user yet? <button><a href="joinus.html">Join Us</a></button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align=center>Would you like to ask a question ?
+                        <button><a href="contact.html">Contact Us</a></button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
             <h5><?= $msg; ?></h5>
-        </form>
+        
     </fieldset>
 </body>
 </html>

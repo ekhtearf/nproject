@@ -5,37 +5,36 @@ $conn = new mysqli("localhost", "root", "", "nproject");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-echo "<Center><h3>All Users in your database</h3></center";
+echo "<fieldset><legend ALIGN=center><h1>All Users in your database</h1></legend>";
 $sql = "SELECT id, user_type , username, name , number, email FROM users";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
-    echo "<Center><table border><tr>
-        <th> ID</th>
-        <th>User Type</th>
-        <th>Username</th>
-        <th>Full Name</th>
-        <th>Phone Number</th>
-        <th>Email</th>
+    echo "<table ALIGN=center><tr>
+        <th ALIGN=center> ID</th>
+        <th ALIGN=center>User Type</th>
+        <th ALIGN=center>Username</th>
+        <th ALIGN=center>Full Name</th>
+        <th ALIGN=center>Phone Number</th>
+        <th ALIGN=center>Email</th>
         </tr>";
     while($row = $result->fetch_assoc()) {
     echo "<tr>
-        <th>".$row["id"]."</th>
-        <td>".$row["user_type"]."</td>
-        <td>".$row["username"]."</td>
-        <td>".$row["name"]."</td>
-        <td>".$row["number"]."</td>
-        <td>".$row["email"]."</td>
+        <th ALIGN=center>".$row["id"]."</th>
+        <td ALIGN=center>".$row["user_type"]."</td>
+        <td ALIGN=center>".$row["username"]."</td>
+        <td ALIGN=center>".$row["name"]."</td>
+        <td ALIGN=center>".$row["number"]."</td>
+        <td ALIGN=center>".$row["email"]."</td>
         </tr>
         ";
     }
-    echo "</center></table>";
+    echo "</table>";
 } else {
     echo "0 results";
 }
-
+echo "</fieldset>";
 $conn->close();
 
 ?>
